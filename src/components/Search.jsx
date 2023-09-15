@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react"
 import { copy, loader, linkIcon, tick } from "../assets"
+import {useLazyGetSummaryQuery} from '../services/article'
+
 function Demo() {
 
   const [article, setArticle] = useState({url:'', summary:'',})
@@ -14,7 +16,7 @@ function Demo() {
                 
               <img src={linkIcon} alt="" 
                 className="absolute left-0 my-2 ml - 3 w-5"/>
-                
+
               <input type="url"
                 placeholder="Enter a URL"
                 value={article.url}
