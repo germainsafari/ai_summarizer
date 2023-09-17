@@ -2,7 +2,10 @@ import React from 'react'
 
 function tail() {
   return (
-    <div>tail</div>
+    <>
+        <div>tail</div>
+    </>
+
   )
 }
 
