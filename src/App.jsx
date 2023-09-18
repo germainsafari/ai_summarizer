@@ -1,20 +1,21 @@
-import Demo from './components/Search';  // Correct import for Demo component
-import Hero from './components/Hero';  // Assuming you might use Hero component later
+import Hero from "./components/Hero";
+import Demo from "./components/Search";
 
-import './App.css';  // Corrected path for CSS import
+import "./App.css";
 
 const App = () => {
-    return (
-        <main>
-            <div className='main'>
-                <div className='gradient'/>
-            </div>
-            <div>
-                <Demo />  
-                <Hero />  
-            </div>
-        </main>
-    );
-} 
+  return (
+    <main>
+      <div className='main'>
+        <div className='gradient' />
+      </div>
+
+      <div className='app'>
+        <Hero />
+        <Demo />
+      </div>
+    </main>
+  );
+};
 
 export default App;
