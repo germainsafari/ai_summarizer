@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { copy, loader, linkIcon, tick } from "../assets"
-import {useGetSummaryQuery} from '../services/article'
+import {useLazyGetSummaryQuery} from '../services/article'
 
 function Demo() {
 
